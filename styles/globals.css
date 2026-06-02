@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --charcoal-950: #0D0F0E;
+  --charcoal-900: #141716;
+  --charcoal-800: #1E2320;
+  --charcoal-700: #2A2F2C;
+  --charcoal-500: #4A524D;
+  --charcoal-300: #9AA89F;
+  --charcoal-100: #E8EDEA;
+  --emerald-600: #059669;
+  --emerald-500: #10B981;
+  --emerald-400: #34D399;
+  --emerald-100: #D1FAE5;
+  --emerald-50: #ECFDF5;
+  --off-white: #F5F7F6;
+  --gold-accent: #c5a854;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  background-color: var(--off-white);
+  color: var(--charcoal-950);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar - Charcoal Theme with Emerald Handle */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--charcoal-800);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--emerald-600);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--emerald-500);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--emerald-600) var(--charcoal-800);
+}
+
+.font-serif {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: var(--font-inter), 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto !important;
+  }
+}
