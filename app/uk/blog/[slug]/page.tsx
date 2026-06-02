@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { getBlogPostBySlug, getBlogPostsByMarket } from '@/lib/data/blog-posts'
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -16,7 +16,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps) {
-  const post = getBlogPostBySlug(params.slug, 'uk')
+  const { slug } = await params
+  const post = getBlogPostBySlug(slug, 'uk')
   
   if (!post) {
     return {
@@ -30,8 +31,9 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   }
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = getBlogPostBySlug(params.slug, 'uk')
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
+  const post = getBlogPostBySlug(slug, 'uk')
 
   if (!post) {
     notFound()

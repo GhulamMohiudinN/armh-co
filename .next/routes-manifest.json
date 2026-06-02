@@ -1,1 +1,304 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:path+/","destination":"/:path+","permanent":true,"internal":true,"regex":"^(?:\\/((?:[^\\/]+?)(?:\\/(?:[^\\/]+?))*))\\/$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/uae/blog/[slug]",
+      "regex": "^/uae/blog/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/uae/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/uk/blog/[slug]",
+      "regex": "^/uk/blog/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/uk/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/terms",
+      "regex": "^/terms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms(?:/)?$"
+    },
+    {
+      "page": "/uae",
+      "regex": "^/uae(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae(?:/)?$"
+    },
+    {
+      "page": "/uae/about",
+      "regex": "^/uae/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/about(?:/)?$"
+    },
+    {
+      "page": "/uae/blog",
+      "regex": "^/uae/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/blog(?:/)?$"
+    },
+    {
+      "page": "/uae/bookkeeping",
+      "regex": "^/uae/bookkeeping(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/bookkeeping(?:/)?$"
+    },
+    {
+      "page": "/uae/case-studies",
+      "regex": "^/uae/case\\-studies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/case\\-studies(?:/)?$"
+    },
+    {
+      "page": "/uae/cfo-advisory",
+      "regex": "^/uae/cfo\\-advisory(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/cfo\\-advisory(?:/)?$"
+    },
+    {
+      "page": "/uae/contact",
+      "regex": "^/uae/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/contact(?:/)?$"
+    },
+    {
+      "page": "/uae/corporate-tax",
+      "regex": "^/uae/corporate\\-tax(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/corporate\\-tax(?:/)?$"
+    },
+    {
+      "page": "/uae/esr-ubo",
+      "regex": "^/uae/esr\\-ubo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/esr\\-ubo(?:/)?$"
+    },
+    {
+      "page": "/uae/faq",
+      "regex": "^/uae/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/faq(?:/)?$"
+    },
+    {
+      "page": "/uae/financial-reporting",
+      "regex": "^/uae/financial\\-reporting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/financial\\-reporting(?:/)?$"
+    },
+    {
+      "page": "/uae/free-zone",
+      "regex": "^/uae/free\\-zone(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/free\\-zone(?:/)?$"
+    },
+    {
+      "page": "/uae/industries",
+      "regex": "^/uae/industries(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/industries(?:/)?$"
+    },
+    {
+      "page": "/uae/payroll-wps",
+      "regex": "^/uae/payroll\\-wps(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/payroll\\-wps(?:/)?$"
+    },
+    {
+      "page": "/uae/pricing",
+      "regex": "^/uae/pricing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/pricing(?:/)?$"
+    },
+    {
+      "page": "/uae/resources",
+      "regex": "^/uae/resources(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/resources(?:/)?$"
+    },
+    {
+      "page": "/uae/team",
+      "regex": "^/uae/team(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/team(?:/)?$"
+    },
+    {
+      "page": "/uae/vat-compliance",
+      "regex": "^/uae/vat\\-compliance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uae/vat\\-compliance(?:/)?$"
+    },
+    {
+      "page": "/uk",
+      "regex": "^/uk(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk(?:/)?$"
+    },
+    {
+      "page": "/uk/about",
+      "regex": "^/uk/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/about(?:/)?$"
+    },
+    {
+      "page": "/uk/blog",
+      "regex": "^/uk/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/blog(?:/)?$"
+    },
+    {
+      "page": "/uk/bookkeeping",
+      "regex": "^/uk/bookkeeping(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/bookkeeping(?:/)?$"
+    },
+    {
+      "page": "/uk/case-studies",
+      "regex": "^/uk/case\\-studies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/case\\-studies(?:/)?$"
+    },
+    {
+      "page": "/uk/companies-house",
+      "regex": "^/uk/companies\\-house(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/companies\\-house(?:/)?$"
+    },
+    {
+      "page": "/uk/contact",
+      "regex": "^/uk/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/contact(?:/)?$"
+    },
+    {
+      "page": "/uk/corporation-tax",
+      "regex": "^/uk/corporation\\-tax(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/corporation\\-tax(?:/)?$"
+    },
+    {
+      "page": "/uk/faq",
+      "regex": "^/uk/faq(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/faq(?:/)?$"
+    },
+    {
+      "page": "/uk/hmrc-claims",
+      "regex": "^/uk/hmrc\\-claims(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/hmrc\\-claims(?:/)?$"
+    },
+    {
+      "page": "/uk/industries",
+      "regex": "^/uk/industries(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/industries(?:/)?$"
+    },
+    {
+      "page": "/uk/international-tax",
+      "regex": "^/uk/international\\-tax(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/international\\-tax(?:/)?$"
+    },
+    {
+      "page": "/uk/payroll",
+      "regex": "^/uk/payroll(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/payroll(?:/)?$"
+    },
+    {
+      "page": "/uk/pricing",
+      "regex": "^/uk/pricing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/pricing(?:/)?$"
+    },
+    {
+      "page": "/uk/rd-tax-credits",
+      "regex": "^/uk/rd\\-tax\\-credits(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/rd\\-tax\\-credits(?:/)?$"
+    },
+    {
+      "page": "/uk/resources",
+      "regex": "^/uk/resources(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/resources(?:/)?$"
+    },
+    {
+      "page": "/uk/self-assessment",
+      "regex": "^/uk/self\\-assessment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/self\\-assessment(?:/)?$"
+    },
+    {
+      "page": "/uk/team",
+      "regex": "^/uk/team(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/team(?:/)?$"
+    },
+    {
+      "page": "/uk/vat-returns",
+      "regex": "^/uk/vat\\-returns(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/uk/vat\\-returns(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
