@@ -1,78 +1,6 @@
 {
   "version": 4,
   "routes": {
-    "/privacy": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/privacy",
-      "dataRoute": "/privacy.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uae/cfo-advisory": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/cfo-advisory",
-      "dataRoute": "/uae/cfo-advisory.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/terms": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/terms",
-      "dataRoute": "/terms.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -97,7 +25,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uae/bookkeeping": {
+    "/privacy": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -110,8 +38,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/bookkeeping",
-      "dataRoute": "/uae/bookkeeping.rsc",
+      "srcRoute": "/privacy",
+      "dataRoute": "/privacy.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -121,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uae/case-studies": {
+    "/uae/blog": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -134,32 +62,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/case-studies",
-      "dataRoute": "/uae/case-studies.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uae/contact": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/contact",
-      "dataRoute": "/uae/contact.rsc",
+      "srcRoute": "/uae/blog",
+      "dataRoute": "/uae/blog.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -193,7 +97,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uae/corporate-tax": {
+    "/uae/cfo-advisory": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -206,32 +110,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/corporate-tax",
-      "dataRoute": "/uae/corporate-tax.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uae/blog": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/blog",
-      "dataRoute": "/uae/blog.rsc",
+      "srcRoute": "/uae/cfo-advisory",
+      "dataRoute": "/uae/cfo-advisory.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -266,7 +146,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uae/pricing": {
+    "/uae/bookkeeping": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -279,8 +159,248 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/pricing",
-      "dataRoute": "/uae/pricing.rsc",
+      "srcRoute": "/uae/bookkeeping",
+      "dataRoute": "/uae/bookkeeping.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/terms": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/terms",
+      "dataRoute": "/terms.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/faq": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/faq",
+      "dataRoute": "/uae/faq.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/case-studies": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/case-studies",
+      "dataRoute": "/uae/case-studies.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/financial-reporting": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/financial-reporting",
+      "dataRoute": "/uae/financial-reporting.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/industries": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/industries",
+      "dataRoute": "/uae/industries.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/payroll-wps": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/payroll-wps",
+      "dataRoute": "/uae/payroll-wps.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/corporate-tax": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/corporate-tax",
+      "dataRoute": "/uae/corporate-tax.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/esr-ubo": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/esr-ubo",
+      "dataRoute": "/uae/esr-ubo.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/free-zone": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/free-zone",
+      "dataRoute": "/uae/free-zone.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uae/contact": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uae/contact",
+      "dataRoute": "/uae/contact.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -314,30 +434,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uk/about": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/about",
-      "dataRoute": "/uk/about.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/uae/team": {
       "experimentalBypassFor": [
         {
@@ -362,7 +458,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uae": {
+    "/uae/pricing": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -375,8 +471,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uae",
-      "dataRoute": "/uae.rsc",
+      "srcRoute": "/uae/pricing",
+      "dataRoute": "/uae/pricing.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -386,7 +482,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uk/blog": {
+    "/uk/about": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -399,8 +495,56 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/blog",
-      "dataRoute": "/uk/blog.rsc",
+      "srcRoute": "/uk/about",
+      "dataRoute": "/uk/about.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uk/contact": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uk/contact",
+      "dataRoute": "/uk/contact.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uk/case-studies": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uk/case-studies",
+      "dataRoute": "/uk/case-studies.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -842,7 +986,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uae/free-zone": {
+    "/uk/blog": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -855,80 +999,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/free-zone",
-      "dataRoute": "/uae/free-zone.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uae/esr-ubo": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/esr-ubo",
-      "dataRoute": "/uae/esr-ubo.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uae/faq": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/faq",
-      "dataRoute": "/uae/faq.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uae/payroll-wps": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/payroll-wps",
-      "dataRoute": "/uae/payroll-wps.rsc",
+      "srcRoute": "/uk/blog",
+      "dataRoute": "/uk/blog.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -962,7 +1034,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uk/contact": {
+    "/uk/bookkeeping": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -975,8 +1047,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/contact",
-      "dataRoute": "/uk/contact.rsc",
+      "srcRoute": "/uk/bookkeeping",
+      "dataRoute": "/uk/bookkeeping.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -986,7 +1058,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uae/industries": {
+    "/uae": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -999,80 +1071,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/industries",
-      "dataRoute": "/uae/industries.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uk/international-tax": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/international-tax",
-      "dataRoute": "/uk/international-tax.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uk/industries": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/industries",
-      "dataRoute": "/uk/industries.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uae/financial-reporting": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uae/financial-reporting",
-      "dataRoute": "/uae/financial-reporting.rsc",
+      "srcRoute": "/uae",
+      "dataRoute": "/uae.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1106,7 +1106,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uk/bookkeeping": {
+    "/uk/faq": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1119,8 +1119,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/bookkeeping",
-      "dataRoute": "/uk/bookkeeping.rsc",
+      "srcRoute": "/uk/faq",
+      "dataRoute": "/uk/faq.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1130,7 +1130,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uk": {
+    "/uk/corporation-tax": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1143,8 +1143,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uk",
-      "dataRoute": "/uk.rsc",
+      "srcRoute": "/uk/corporation-tax",
+      "dataRoute": "/uk/corporation-tax.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1154,7 +1154,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uk/pricing": {
+    "/uk/international-tax": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -1167,32 +1167,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/pricing",
-      "dataRoute": "/uk/pricing.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uk/self-assessment": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/self-assessment",
-      "dataRoute": "/uk/self-assessment.rsc",
+      "srcRoute": "/uk/international-tax",
+      "dataRoute": "/uk/international-tax.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1226,6 +1202,78 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/uk/pricing": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uk/pricing",
+      "dataRoute": "/uk/pricing.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uk/industries": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uk/industries",
+      "dataRoute": "/uk/industries.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uk": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uk",
+      "dataRoute": "/uk.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/uk/team": {
       "experimentalBypassFor": [
         {
@@ -1241,6 +1289,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/uk/team",
       "dataRoute": "/uk/team.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/uk/self-assessment": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/uk/self-assessment",
+      "dataRoute": "/uk/self-assessment.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -1298,30 +1370,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/uk/faq": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/faq",
-      "dataRoute": "/uk/faq.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/uk/resources": {
       "experimentalBypassFor": [
         {
@@ -1337,54 +1385,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/uk/resources",
       "dataRoute": "/uk/resources.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uk/corporation-tax": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/corporation-tax",
-      "dataRoute": "/uk/corporation-tax.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/uk/case-studies": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/uk/case-studies",
-      "dataRoute": "/uk/case-studies.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",

@@ -131,11 +131,14 @@ export default function UKHomepage() {
     <div>
       {/* Hero Section */}
       <section className="bg-charcoal-950 pt-24 pb-16 md:pt-32 md:pb-20 lg:pb-24 px-5 md:px-4 relative overflow-hidden">
-        <img
-          src="/service1.png"
-          alt="UK Accounting"
+        <video
+          autoPlay
+          loop
+          muted
           className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
+        >
+          <source src="/ukvideo.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-charcoal-950/70"></div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1
